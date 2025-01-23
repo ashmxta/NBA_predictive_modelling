@@ -10,10 +10,13 @@ This project uses machine learning to predict NBA game outcomes (win, loss, tie)
 - Utilize team stats, player metrics, and contextual data.
 - Benchmark against sportsbooks and expert predictions.
 
-## Data Sources
+## Data Sources (Web-scraping)
 
 - [NBA Stats](https://www.nba.com/stats)
 - [Basketball Reference](https://www.basketball-reference.com)
+
+## Data sets
+- Kaggle: https://www.kaggle.com/datasets/eoinamoore/historical-nba-data-and-player-box-scores?resource=download
 
 ## Methodology
 
