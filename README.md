@@ -35,3 +35,6 @@ This project uses machine learning to predict NBA game outcomes (win, loss, tie)
 - Ashmita Bhattacharyya  
 - Samson Chow  
 - Doga Baskan
+
+
+## Last updated: 23rd Jan 2025
