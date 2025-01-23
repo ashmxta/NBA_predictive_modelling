@@ -30,8 +30,9 @@ This project uses machine learning to predict NBA game outcomes (win, loss, tie)
 
 - Python, PyTorch, Sci-kit Learn
 
-## Literature Review
-Literature review + ECE324 Course notes: https://ashmita-uoft.notion.site/ECE324-Literature-Review-1841858e312f80a7a477dfe687897eaf?pvs=4
+## Literature Review + 324 Course notes
+The resource below consists of a literature review of model architectures used as well as notes from ECE324 lectures - these helped inform our architecture choices. 
+https://ashmita-uoft.notion.site/324?pvs=4
 
 ## Contributors
 
