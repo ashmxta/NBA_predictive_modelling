@@ -37,4 +37,4 @@ This project uses machine learning to predict NBA game outcomes (win, loss, tie)
 - Doga Baskan
 
 
-## Last updated: 23rd Jan 2025
+Last updated: 23rd Jan 2025
