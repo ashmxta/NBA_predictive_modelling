@@ -97,7 +97,9 @@ def get_team_data(team: object, team_name: str, start_year: int, end_year:int) -
 
 if __name__ == '__main__':
     # can replace team with any team object, and change years
-    get_team_data(Team.LOS_ANGELES_LAKERS, 'lakers', 1997, 2023)
+    for team in Team:
+        get_team_data(team, team.value.lower().replace(" ", "_"), 2014, 2024)
+
 
 
 
