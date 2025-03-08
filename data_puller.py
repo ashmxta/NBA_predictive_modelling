@@ -70,6 +70,8 @@ def get_team_data(team: object, team_name: str, start_year: int, end_year:int) -
             os.mkdir(path)
 
             print(f'created directory for {year}')
+        else:
+            continue
         
         # track what game we are on for the directory
         game_count = 1
