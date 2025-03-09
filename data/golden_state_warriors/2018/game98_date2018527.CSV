@@ -1,0 +1,16 @@
+slug,name,team,location,opponent,outcome,seconds_played,made_field_goals,attempted_field_goals,made_three_point_field_goals,attempted_three_point_field_goals,made_free_throws,attempted_free_throws,offensive_rebounds,defensive_rebounds,assists,steals,blocks,turnovers,personal_fouls,game_score,plus_minus
+jamesle01,LeBron James,CLEVELAND CAVALIERS,AWAY,BOSTON CELTICS,WIN,2880,12,24,3,8,8,11,0,15,9,0,2,8,4,24.4,8.0
+horfoal01,Al Horford,BOSTON CELTICS,HOME,CLEVELAND CAVALIERS,LOSS,2411,7,12,0,1,3,3,0,4,3,1,0,0,2,14.9,-2.0
+greenje02,Jeff Green,CLEVELAND CAVALIERS,AWAY,BOSTON CELTICS,WIN,2514,7,14,2,9,3,4,0,8,1,0,1,0,2,14.6,7.0
+tatumja01,Jayson Tatum,BOSTON CELTICS,HOME,CLEVELAND CAVALIERS,LOSS,2529,9,17,2,6,4,4,0,7,1,1,0,4,6,13.1,-17.0
+morrima03,Marcus Morris,BOSTON CELTICS,HOME,CLEVELAND CAVALIERS,LOSS,1970,5,14,2,6,2,4,4,8,2,1,0,0,3,11.8,1.0
+thomptr01,Tristan Thompson,CLEVELAND CAVALIERS,AWAY,BOSTON CELTICS,WIN,2091,4,4,0,0,2,3,1,8,1,0,0,0,1,11.8,14.0
+smithjr01,J.R. Smith,CLEVELAND CAVALIERS,AWAY,BOSTON CELTICS,WIN,2546,3,8,3,8,3,5,0,4,0,1,1,1,2,7.9,14.0
+baynear01,Aron Baynes,BOSTON CELTICS,HOME,CLEVELAND CAVALIERS,LOSS,1128,0,0,0,0,3,4,3,2,0,0,0,0,2,4.5,-7.0
+brownja02,Jaylen Brown,BOSTON CELTICS,HOME,CLEVELAND CAVALIERS,LOSS,2336,5,18,3,12,0,0,1,5,1,1,0,1,2,4.5,-11.0
+smartma01,Marcus Smart,BOSTON CELTICS,HOME,CLEVELAND CAVALIERS,LOSS,1850,1,10,0,4,2,4,3,1,7,1,0,0,2,4.1,2.0
+hillge01,George Hill,CLEVELAND CAVALIERS,AWAY,BOSTON CELTICS,WIN,2282,2,6,0,2,2,2,0,2,2,1,0,2,3,2.4,24.0
+nancela02,Larry Nance Jr.,CLEVELAND CAVALIERS,AWAY,BOSTON CELTICS,WIN,471,1,2,0,1,0,0,1,1,0,0,0,1,4,-0.6,-9.0
+korveky01,Kyle Korver,CLEVELAND CAVALIERS,AWAY,BOSTON CELTICS,WIN,1056,1,6,1,6,0,0,0,1,2,0,0,0,4,-0.7,-5.0
+roziete01,Terry Rozier,BOSTON CELTICS,HOME,CLEVELAND CAVALIERS,LOSS,2176,2,14,0,10,0,0,0,4,4,1,0,0,3,-1.2,-6.0
+clarkjo01,Jordan Clarkson,CLEVELAND CAVALIERS,AWAY,BOSTON CELTICS,WIN,560,0,2,0,1,0,0,0,0,0,0,0,0,1,-1.8,-13.0
