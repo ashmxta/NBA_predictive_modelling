@@ -12,7 +12,7 @@ import os
 import time
 import random
 
-DELAY_TIME = random.randint(3,5)
+DELAY_TIME = random.randint(3,4)
 DIRECTORY = os.getcwd()
 
 # get the season schedule for the three teams so we know the dates where they played
