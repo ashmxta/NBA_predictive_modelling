@@ -1,25 +1,31 @@
 '''
 authors:        Samson Chow 
 date created:   Feb. 27, 2025
-purpose:        The purpose of this file is to use basketball_reference_web_scraper to get
-                game data of the bucks, mavs, and lakers for all games from years 20xx - 20xx
+purpose:        The purpose of this file is to use 
+                basketball_reference_web_scraper to get
+                game data of the bucks, mavs, and lakers for all games 
+                from years 20xx - 20xx
 '''
 
-from basketball_reference_web_scraper import client
-from basketball_reference_web_scraper.data import Team
-from basketball_reference_web_scraper.data import OutputType
 import os
 import time
 import random
 
-DELAY_TIME = random.randint(3,4)
+from basketball_reference_web_scraper import client
+from basketball_reference_web_scraper.data import Team
+from basketball_reference_web_scraper.data import OutputType
+
+# delay between requests, and directory to save data
+DELAY_TIME = random.randint(3,4)  
 DIRECTORY = os.getcwd()
 
-# get the season schedule for the three teams so we know the dates where they played
+# get the season schedule for the three teams so we know the 
+# dates where they played
 def get_season_schedule(year: int, team: object) ->list:
     '''
     a helper fucntion that has inputs of year and team name
-    returns all of the dates played in the season as a list of tuples dates in format (YYYY, MM, DD)
+    returns all of the dates played in the season as a list of tuples dates in
+    format (YYYY, MM, DD)
     '''
 
     print(f'fetching games played for year {year}')
@@ -34,19 +40,24 @@ def get_season_schedule(year: int, team: object) ->list:
     for game in raw_data:
         if game['home_team'] == team or game['away_team'] == team:
             raw_date = str(game['start_time'])
-            dates_played.append((int(raw_date[:4]), int(raw_date[5:7]), int(raw_date[8:10])))
+            dates_played.append((int(raw_date[:4]), 
+                                int(raw_date[5:7]), 
+                                int(raw_date[8:10])))
 
     print(f'finished fetching games played for year {year}')
     time.sleep(DELAY_TIME)
 
     return dates_played
 
+
 # given a team, this function will fetch all data of all games from the years given 
-def get_team_data(team: object, team_name: str, start_year: int, end_year:int) -> None:
+def get_team_data(team: object, team_name: str, start_year: int, end_year:int
+        ) -> None:
     '''
     This function will take in team (object), team_name (string for directory), 
     start year, end year and fetch data of all games from years given
-    This function will write to a file, if the directory does not exist, it will create one
+    This function will write to a file, if the directory does not exist, 
+    it will create one
     Function returns 0 if everything works, returns error code if not
     '''
 
@@ -80,6 +91,8 @@ def get_team_data(team: object, team_name: str, start_year: int, end_year:int) -
         # loop through each game, create JSON file with data
         for game in season_schedule:
             try:
+                # this one line is very long, 
+                # but i dont want to mess with the formatting
                 client.player_box_scores(day=game[2], month=game[1], year=game[0],
                                         output_type=OutputType.CSV,
                                         output_file_path=DIRECTORY + f'/data/{team_name}/{year}/game{game_count}_date{str(game[0]) + str(game[1]) + str(game[2])}.CSV')
