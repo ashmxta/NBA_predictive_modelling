@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project uses machine learning to predict NBA game outcomes (win, loss, tie) using models like logistic regression and LSTMs. The goal is to create accurate predictions to inform betting decisions while considering ethical concerns.
+This project uses machine learning to predict NBA game outcomes (win, loss) using models like MLPs, 1-D CNNs and LSTMs. The goal is to create accurate predictions to inform betting decisions while considering ethical concerns.
 
 ## Features
 
-- Predict game outcomes with probabilities.
+- Predict game outcomes.
 - Utilize team stats, player metrics, and contextual data.
 - Benchmark against sportsbooks and expert predictions.
 
@@ -21,7 +21,7 @@ This project uses machine learning to predict NBA game outcomes (win, loss, tie)
 ## Methodology
 
 1. **Data Collection**: Gather stats using web scraping and APIs.
-2. **Modeling**: Train logistic regression and LSTM models.
+2. **Modeling**: Train MLPs and LSTM models.
 3. **Evaluation**: Compare predictions with sportsbook odds and real-world outcomes.
 
 ## Goals
@@ -33,15 +33,11 @@ This project uses machine learning to predict NBA game outcomes (win, loss, tie)
 
 - Python, PyTorch, Sci-kit Learn
 
-## Literature Review + 324 Course notes
-The resource below consists of a literature review of model architectures used and experiment data / figures.
-https://ashmita-uoft.notion.site/324?pvs=4
-
 ## Contributors
 
-- Ashmita Bhattacharyya  
-- Samson Chow  
+- Ashmita Bhattacharyya
 - Doga Baskan
+- Samson Chow  
 
 
-Last updated: 23rd Jan 2025
+Last updated: 10th Mar 2025
