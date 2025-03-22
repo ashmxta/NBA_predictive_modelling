@@ -1,0 +1,2 @@
+team,opponent,attempted_field_goals,attempted_three_point_field_goals,attempted_free_throws,assists,steals,personal_fouls,avg_game_score,percent_fg_made,percent_3p_made,percent_ft_made,ORB,DRB,percent_shots_blocked,TOVR,team_win,opp_win,date
+1,27,77,23,31,24,7,12,8.010000000000002,0.4675324675324675,0.43478260869565216,0.6451612903225806,0.4117647058823529,0.4838709677419355,0.02702702702702703,0.10265319014529374,1,0,2013111.
