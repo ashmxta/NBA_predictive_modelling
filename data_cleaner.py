@@ -7,7 +7,7 @@ purpose:        The purpose of this script is to aggregate the data by
 '''
 
 import os
-from enum import Enum
+from pathlib import Path
 
 import pandas as pd
 
@@ -21,6 +21,26 @@ def get_enum_from_string(enum_class, string_value):
             return member
     return None
 
+# helper funciton for returning name given path (GPT wrote this one)
+def extract_team_name_from_path(path):
+    # Split the path by directory separator
+    path_components = path.split('/')
+    
+    # Find the component that might contain the team name
+    for component in path_components:
+        if '_' in component and not component.endswith('.csv'):
+            # This looks like it might be a team name
+            # Convert from snake_case to readable format
+            team_name = component.upper()
+            return team_name
+    
+    return None
+
+# Example usage
+path = "/Users/schoolaccount/Desktop/MI/324-Project/data/los_angeles_clippers/2014"
+team_name = extract_team_name_from_path(path)
+print(team_name)  # Output: LOS ANGELES CLIPPERS
+
 # funciton for cleaning a spreadsheet
 def clean_data(file_path: str, team: Team) -> pd.DataFrame:
     '''
@@ -31,6 +51,9 @@ def clean_data(file_path: str, team: Team) -> pd.DataFrame:
     data = pd.read_csv(file_path)
     data = data[data['team'] == team.value]
     data = data.drop(columns=['slug', 'name', 'location', 'seconds_played', 'plus_minus'])
+
+    if data.empty:
+        return None
 
     # aggregate data, keep team, opponent, and outcome as columns
     data = data.groupby(['team', 'opponent', 'outcome'], as_index=False).agg(
@@ -102,15 +125,69 @@ def clean_data(file_path: str, team: Team) -> pd.DataFrame:
     data.at[0, 'opponent'] = opp_id
 
     # can comment out: add the date of the game
-    data['date'] = fp[-11:-3]
-
+    # data['date'] = file_path[-11:-3]
 
     # for testing purposes
-    data.to_csv('temp.CSV', index=False)
+    # data.to_csv('temp.CSV', index=False)
+
+    return data
 
 if __name__ == '__main__':
-    fp = os.path.join(os.getcwd(), 'data', 'atlanta_hawks', '2014', 'game2_date2013111.CSV')
-    clean_data(fp, Team.ATLANTA_HAWKS)
+    # testing stuff
+    
+    # fp = os.path.join(os.getcwd(), 'data', 'atlanta_hawks', '2014', 'game2_date2013111.CSV')
+    # res = clean_data(fp, Team.ATLANTA_HAWKS)
+
+    # fp = os.path.join(os.getcwd(), 'data', 'atlanta_hawks', '2014', 'game9_date20131116.CSV')
+    # tmp = clean_data(fp, Team.ATLANTA_HAWKS)
+    # res = pd.concat([res, tmp], ignore_index=True)
+
+    # res.to_csv('tmp.CSV', index=False)
+
+
+    res = pd.DataFrame()
+    data_rd = os.path.join(os.getcwd(), 'data')
+
+    # for each team in data
+    for root, dirs, files in os.walk(data_rd):
+        for file in files:
+            if file.endswith('.CSV'):
+
+                # get the team 
+                team = extract_team_name_from_path(root)
+                team = Team[team]
+
+                path = os.path.join(root, file)
+                
+                try: 
+                    tmp = clean_data(path, team)
+                    if not tmp.empty:
+                        res = pd.concat([res, tmp], ignore_index=True)
+
+                except Exception as e:
+                    print(f"Error processing {path}: {e}")
+    
+    res.to_csv('cleaned_data.CSV', index=False)
+
+                
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
