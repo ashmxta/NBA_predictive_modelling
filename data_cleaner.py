@@ -36,11 +36,6 @@ def extract_team_name_from_path(path):
     
     return None
 
-# Example usage
-path = "/Users/schoolaccount/Desktop/MI/324-Project/data/los_angeles_clippers/2014"
-team_name = extract_team_name_from_path(path)
-print(team_name)  # Output: LOS ANGELES CLIPPERS
-
 # funciton for cleaning a spreadsheet
 def clean_data(file_path: str, team: Team) -> pd.DataFrame:
     '''
@@ -163,7 +158,6 @@ if __name__ == '__main__':
                     tmp = clean_data(path, team)
                     if not tmp.empty:
                         res = pd.concat([res, tmp], ignore_index=True)
-
                 except Exception as e:
                     print(f"Error processing {path}: {e}")
     
