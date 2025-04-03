@@ -4,6 +4,8 @@ date created:   March 20, 2025
 purpose:        The purpose of this script is to aggregate the data by 
                 team and then pull out useful stats and clean the data in 
                 preparation for training
+                IMPORTANT: THIS SCRIPT WILL NOT WORK UNLESS ITS IN THE SAME
+                DIRECTORY AS DATA PULLER
 '''
 
 import os
