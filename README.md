@@ -1,43 +1,26 @@
-# ECE324: NBA Game Predictions
+# ECE324: Predictive Modeling of NBA Game Outcomes
+This github repo contains all coding artifacts used for model training and to produce figures for our final project report. To learn more about our project, feel free to view our [final presentation](https://docs.google.com/presentation/d/1wbNToctD4GDqJdecT4lifqlGs3gQBpBkTQs6nnlTFOg/edit?usp=sharing). 
 
-## Overview
+## Directory organization
+This repo contains 4 folders:
+- raw_data: contains webscraped game data, organzied by team by year in CSV file format
+- cleaned_data: contains cleaned datasets (with and without dates) and data visualization artifacts
+- data_scripts: contains scripts used to pull and processing data (web-scrapping)
+- models: contains collab notebooks of our final models
 
-This project uses machine learning to predict NBA game outcomes (win, loss) using models like MLPs, 1-D CNNs and LSTMs. The goal is to create accurate predictions to inform betting decisions while considering ethical concerns.
+This is the naming convention used in the models folder: 
+    file name: model_dataset.ipynb
+    eg. MLP_kaggle.ipynb
+    models: MLP, RF, XGB, 1-D_CNN, LSTM
+    datasets: kaggle, cleaned, cleaned_dates
 
-## Features
-
-- Predict game outcomes.
-- Utilize team stats, player metrics, and contextual data.
-- Benchmark against sportsbooks and expert predictions.
-
-## Data Sources (Web-scraping)
-
-- [NBA Stats](https://www.nba.com/stats)
-- [Basketball Reference](https://www.basketball-reference.com)
-
-## Data sets
-- Kaggle: https://www.kaggle.com/datasets/eoinamoore/historical-nba-data-and-player-box-scores?resource=download
-
-## Methodology
-
-1. **Data Collection**: Gather stats using web scraping and APIs.
-2. **Modeling**: Train MLPs and LSTM models.
-3. **Evaluation**: Compare predictions with sportsbook odds and real-world outcomes.
-
-## Goals
-
-- Predict tournament winners and individual player performances.
-- Provide real-time predictions with up-to-date data.
-
-## Tools
-
-- Python, PyTorch, Sci-kit Learn
+The Kaggle dataset can be downloaded from [this link](https://www.kaggle.com/datasets/eoinamoore/historical-nba-data-and-player-box-scores?resource=download
+).
 
 ## Contributors
-
 - Ashmita Bhattacharyya
 - Doga Baskan
 - Samson Chow  
 
 
-Last updated: 10th Mar 2025
+Last updated: 6th Apr 2025
