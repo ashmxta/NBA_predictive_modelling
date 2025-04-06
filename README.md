@@ -9,10 +9,10 @@ This repo contains 4 folders:
 - models: contains collab notebooks of our final models
 
 This is the naming convention used in the models folder: 
-    file name: model_dataset.ipynb
-    eg. MLP_kaggle.ipynb
-    models: MLP, RF, XGB, 1-D_CNN, LSTM
-    datasets: kaggle, cleaned, cleaned_dates
+- file name: model_dataset.ipynb
+- eg. MLP_kaggle.ipynb
+- models: MLP, RF, XGB, 1-D_CNN, LSTM
+- datasets: kaggle, cleaned, cleaned_dates
 
 The Kaggle dataset can be downloaded from [this link](https://www.kaggle.com/datasets/eoinamoore/historical-nba-data-and-player-box-scores?resource=download
 ).
