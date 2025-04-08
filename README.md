@@ -7,13 +7,13 @@ This repo contains 4 folders:
 - cleaned_data: contains cleaned datasets (with and without dates) and data visualization artifacts
 - data_scripts: contains scripts used to pull and processing data (web-scrapping)
 - MLP: contains collab notebooks of MLP models
-- time_series: collab notebooks of 1-D CNN and LSTM models
+- time_series: collab notebook containing both 1-D CNN and LSTM models
 - tree_models: collab notebooks of RF and XGB models
 
 This is the naming convention used for models: 
 - file name: model_dataset.ipynb
-- eg. MLP_kaggle.ipynb
-- models: MLP, RF, XGB, 1-D_CNN, LSTM
+- eg. MLP_clean.ipynb
+- models: MLP, RF, XGB, time_series
 - datasets: kaggle, cleaned, cleaned_dates
 
 The Kaggle dataset can be downloaded from [this link](https://www.kaggle.com/datasets/eoinamoore/historical-nba-data-and-player-box-scores?resource=download
