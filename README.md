@@ -26,4 +26,4 @@ The API used for Basketball reference webscrapper can be found at this [link](ht
 - Samson Chow  
 
 
-Last updated: 6th Apr 2025
+Last updated: 7th Apr 2025
