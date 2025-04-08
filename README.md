@@ -18,6 +18,7 @@ This is the naming convention used for models:
 
 The Kaggle dataset can be downloaded from [this link](https://www.kaggle.com/datasets/eoinamoore/historical-nba-data-and-player-box-scores?resource=download
 ).
+The API used for Basketball reference webscrapper can be found at this [link](https://jaebradley.github.io/basketball_reference_web_scraper/api/#get-season-schedule).
 
 ## Contributors
 - Ashmita Bhattacharyya
