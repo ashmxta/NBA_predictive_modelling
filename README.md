@@ -1,4 +1,4 @@
-# ECE324: Predictive Modeling of NBA Game Outcomes
+# Predictive Modeling of NBA Game Outcomes
 This github repo contains all coding artifacts used for model training and to produce figures for our final project report. To learn more about our project, feel free to view our [final presentation](https://docs.google.com/presentation/d/1wbNToctD4GDqJdecT4lifqlGs3gQBpBkTQs6nnlTFOg/edit?usp=sharing). 
 
 ## Directory organization
